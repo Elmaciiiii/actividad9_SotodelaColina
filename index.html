@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Interactivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">📅 Calendario</h1>
+            <div class="theme-toggle" role="button" tabindex="0" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="calendar" role="application" aria-label="Calendario">
+            <div class="calendar__info">
+                <button class="calendar__prev" id="prev-month" aria-label="Mes anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="calendar__month" id="month" aria-live="polite">Junio</div>
+                <div class="calendar__year" id="year" aria-live="polite">2025</div>
+                <button class="calendar__next" id="next-month" aria-label="Mes siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="calendar-week" role="rowgroup">
+                <div class="calendar__day" role="columnheader">Dom</div>
+                <div class="calendar__day" role="columnheader">Lun</div>
+                <div class="calendar__day" role="columnheader">Mar</div>
+                <div class="calendar__day" role="columnheader">Mié</div>
+                <div class="calendar__day" role="columnheader">Jue</div>
+                <div class="calendar__day" role="columnheader">Vie</div>
+                <div class="calendar__day" role="columnheader">Sáb</div>
+            </div>
+
+            <div class="calendar-days" role="grid">
+                <!-- Los días se agregarán dinámicamente -->
+            </div>
+
+            <div class="calendar__legend">
+                <div class="legend-item">
+                    <span class="legend-color holiday"></span>
+                    <span>Feriado</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color today"></span>
+                    <span>Hoy</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color event"></span>
+                    <span>Evento</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para agregar eventos -->
+    <div class="modal" id="eventModal" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="close" aria-label="Cerrar modal">&times;</button>
+            <h2 id="modalTitle">Agregar Evento</h2>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="eventTitle">Título del Evento:</label>
+                    <input type="text" id="eventTitle" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="eventDescription">Descripción:</label>
+                    <textarea id="eventDescription" aria-label="Descripción del evento"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-save"></i> Guardar Evento
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
