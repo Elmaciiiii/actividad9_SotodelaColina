@@ -1,4 +1,4 @@
-# 📅 Calendario Interactivo con Eventos y Feriados - EEST N°1
+# 📅 Calendario Interactivo con Eventos y Feriados 
 
 Este proyecto consiste en el desarrollo de una pagina web que permite **ver un calendario simple**, **agregar eventos personales a cada día** y **mostrar automáticamente los feriados nacionales de Argentina** según el mes y el año seleccionado.
 
@@ -32,42 +32,43 @@ Para probar esta mini aplicación del calendario, seguí estos pasos:
 ---
 
 1. **Descargar el proyecto desde GitHub:**
-   * Ingresá a la página del repositorio.
-   * Hacé clic en el botón verde que dice **"Code"**.
-   * Elegí la opción **"Download ZIP"** y guardá el archivo en tu computadora.
+   * Ve a esta página: [https://github.com/Elmaciiiii/actividad9_SotodelaColina.git](https://github.com/Elmaciiiii/actividad9_SotodelaColina.git)
+   * Haz clic en el botón verde que dice **"Code"**.
+   * Elige la opción **"Download ZIP"** y guardá el archivo en tu computadora.
 
 ---
 
 2. **Extraer el archivo ZIP:**
-   * Buscá el archivo ZIP que descargaste y hacé clic derecho para **extraer el contenido**.
-   * Se creará una carpeta con el nombre del proyecto.
+   * Buscá el archivo ZIP que descargaste y hacé clic derecho para **extraer su contenido**.
+   * Se creará una carpeta llamada `actividad9_SotodelaColina-main` o similar.
 
 ---
 
 3. **Abrir la carpeta del proyecto en Visual Studio Code:**
    * Abrí **Visual Studio Code**.
-   * En el menú superior, andá a **"Archivo" > "Abrir Carpeta"**.
-   * Seleccioná la carpeta extraída y hacé clic en **"Abrir"**.
+   * En la barra de menú, andá a **"Archivo" (File)** y seleccioná **"Abrir Carpeta" (Open Folder)**.
+   * Navegá hasta la carpeta que se creó al extraer el ZIP (`actividad9_SotodelaColina-main`) y seleccionala.
+   * Hacé clic en **"Seleccionar carpeta"** o **"Abrir"**.
 
 ---
 
-4. **Abrir `index.html` con Live Server (opcional):**
-   * 📦 Asegurate de tener instalada la extensión **"Live Server"** en Visual Studio Code.
-     - Podés buscarla en la sección de extensiones (ícono de cuadrados) y hacer clic en **"Instalar"**.
-   * Buscá y abrí el archivo `index.html`.
-   * Hacé clic derecho dentro del archivo y seleccioná **"Open with Live Server"**.
+4. **Abrir `index.html` con Live Server:**
+   * 📦 **Asegurate de tener instalada la extensión "Live Server" en Visual Studio Code.**
+     - Podés buscarla en la sección de extensiones (ícono con cuatro cuadrados) y hacer clic en **"Instalar"**.
+   * En el panel de archivos de Visual Studio Code (a la izquierda), **buscá y abrí el archivo `index.html`**.
+   * Hacé clic derecho dentro del archivo abierto y seleccioná **"Open with Live Server"**.
    * La página del calendario se abrirá automáticamente en tu navegador.
+   * Cada vez que hagas un cambio en el código, Live Server actualizará la página.
 
 ---
 
 5. **Interactuar con el calendario:**
-   * Navegá entre meses tocando las flechas izquierda o derecha.
-   * Hacé clic en un día:
-     - Si ya tiene un evento o es feriado, vas a ver un resumen.
-     - Si no tiene nada, podés agregar un nuevo evento.
-   * Probá cambiar el tema tocando el ícono de la luna o el sol.
-   * Usá el teclado si preferís navegar sin mouse (Enter, Tab, Escape).
-
+   * Usá las flechitas arriba del calendario para cambiar de mes.
+   * Hacé clic en cualquier día:
+     - Si es feriado o tiene eventos, verás los detalles.
+     - Si no tiene nada, podrás **agregar un evento** con título y descripción.
+   * Cambiá entre modo claro y oscuro tocando el ícono de la luna o el sol.
+   * Eliminá eventos desde el mismo calendario si ya no los necesitás.
 ---
 
 El calendario permite:
